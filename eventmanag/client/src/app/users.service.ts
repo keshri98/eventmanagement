@@ -10,14 +10,14 @@
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import{ Router} from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
   url = 'http://localhost:3000/user';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private router :Router) { }
   addData(name,address,city,password,email,image) {
       const obj = {name,address,city,password,email,image};
       this
@@ -58,7 +58,7 @@ export class UsersService {
             .post(`${this.url}/addRegister`, obj)
             .subscribe(res => console.log(res));
     }
-
+   
     up_data(name,city, password,address,email, id) {
 
       const obj = {
@@ -73,5 +73,22 @@ export class UsersService {
         .http
         .post(`${this.url}/update/${id}`, obj)
         .subscribe(res => console.log('Done'));
+    }
+
+    signIn(email,password){
+      const obj = {email, password};
+      console.log(obj);
+      this
+        .http
+        .post(`${this.url}/signin`,obj)
+        .subscribe((res:any) => {
+          if(res.message){
+            alert(res.message);
+          }
+          else{
+ 
+            this.router.navigateByUrl(`/about`);
+          }
+        });
     }
 }

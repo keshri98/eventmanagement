@@ -4,9 +4,7 @@
 		  <div class="container">
 			<div class="col-md-8 col-md-offset-2 text-center">
 			 <marquee behavior="alternative"> <h3 style="color: black">Don't Miss This Event</h3></marquee>
-			  <!-- HTML Codes by Quackit.com -->
-<!-- <span style="position:absolute;top:400px">
-</span><a [routerLink]="['/event']" class="btn btn-large">Events</a>  -->
+			 
 			</div>
 		  </div>
 		</section>
@@ -15,18 +13,16 @@
 			<div class="scontainer">
 			<div class="section-header">
 						  <h2 class="wow fadeInDown animated">News & Updates</h2>
-						  <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
 					  </div>
-			  <div class="row"> 
+			  <div class="row" > 
 				<div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-recycle"></span>
 				  <div class="services-content">
 					<h5>Musical Night</h5>
 					<b>Day 1</b>
 					<img src="../../assets/images/portfolio/03.jpg" style="height: 350px;width: 350px;">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p>
 					<button style="height: 50px;width:100px;;"><a href="#">PARTICIPATE</a></button>
                       
-					<button style="height: 50px;width:100px;float: right;"><a href="#">BYE NOW</a></button>
+					<button style="height: 50px;width:90px;float: right;"><a href="#">BYE NOW</a></button>
 					
 				</div>
 				</div>
@@ -35,16 +31,22 @@
 					<h5>Dancing Night</h5>
 					<b>Day 2</b>
 					<img src="../../assets/images/portfolio/06.jpg" style="height: 350px;width: 350px;">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p>
-				  </div>
+					<button style="height: 50px;width:100px;;"><a href="#">PARTICIPATE</a></button>
+                      
+					<button style="height: 50px;width:100px;float: right;"><a [routerLink]="['/outeam']">BYE NOW</a></button>
+					  
+				</div>
 				</div> 
 				<div class="col-md-4 col-sm-6 services text-center"> <span class="icon icon-megaphone"></span>
 				  <div class="services-content">
 					<h5>Food Night</h5>
 					<b>Day 3</b>
 					<img src="../../assets/images/01_Home.jpg" style="height: 350px;width: 350px;">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.</p>
-				  </div>
+					<button style="height: 50px;width:100px;;"><a href="#">PARTICIPATE</a></button>
+                      
+					<button style="height: 50px;width:100px;float: right;"><a href="#">BYE NOW</a></button>
+					  
+				</div>
 				</div> 
 			  </div>
 			</div>
@@ -53,7 +55,6 @@
 	<div class="container">
 	    <div class="section-header">
                 <h2 class="wow fadeInDown animated">Events</h2>
-                <p class="wow fadeInDown animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
 		<div class="row">
 			<div class="col-md-6">
@@ -122,9 +123,7 @@
 							  </p>
 		  
 							</div>
-							<!-- <div class="box-bottom">
-							  <a href="#">Learn more</a>
-							</div> -->
+							
 						  </div>
 						</div></a>
 						<a href="http://ipu.ac.in/connectuss/gaming.html" target="_blank">
@@ -295,10 +294,10 @@
 			  <a href="#" class="btn btn-primary">{{obj.address}}</a>
 			</div>
   
-			<button type="submit"
+			<!-- <button type="submit"
 [routerLink]="['/update',obj._id]">Update</button>
 <button type="submit"
-(click)="delData(obj._id)">Delete</button>
+(click)="delData(obj._id)">Delete</button> -->
 </div>
 </div>
 </div>

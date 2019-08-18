@@ -13,10 +13,14 @@ import { AdmiinComponent } from './admiin/admiin.component';
 import { UpdateComponent } from './update/update.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AdeventComponent } from './adevent/adevent.component';
+import { ParticipationComponent } from './participation/participation.component';
 const routes: Routes = [
   {path:'about', component:AboutComponent},
   {path:'',component:HomeComponent},
   {path:'contact', component:ContactComponent},
+  {path:'participation',component:ParticipationComponent},
+  {path:'adevent',component:AdeventComponent},
   {path:'event',component:EventsComponent},
   {path:'gallery',component:GalleryComponent},
   {path:'tickets',component:TicketsComponent},

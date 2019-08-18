@@ -18,6 +18,8 @@ import{HttpClientModule} from '@angular/common/http';
 import { UpdateComponent } from './update/update.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AdeventComponent } from './adevent/adevent.component';
+import { ParticipationComponent } from './participation/participation.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { SignupComponent } from './signup/signup.component';
     AdmiinComponent,
     UpdateComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    AdeventComponent,
+    ParticipationComponent
   ],
   imports: [
     BrowserModule,

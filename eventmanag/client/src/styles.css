@@ -456,14 +456,15 @@ ul li {
 	-webkit-transform: translateY(0) rotate(-45deg);
 	transform: translateY(0) rotate(-45deg);
 }
+
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
 
 .banner {
-	margin: -22px;
+	margin-top: -20px;
 	background-image: url(./assets/images/event1.jpg);
-	width: auto;
+	width: 100%;
 	background-position: center top;
 	position: relative;
 	background-attachment: fixed;
@@ -601,16 +602,29 @@ section#events {
 	text-align: left;
 	font-style: italic;
 }
+.Acontainer {
+    background-color: mintcream;
+    margin-left: 5px;
+}
+
 /* -----------------------------------------------------------------------------
 Common Styles
 ------------------------------------------------------------------------------- */
 .section-header{	
 text-align: center;	
+overflow: hidden;
 padding-bottom: 30px;
+}
+.scontainer{
+	overflow: hidden;
 }
 #gallery {
 	background-color: black;
+	margin-top: -20px;
 
+}
+.ng-untouched{
+	background-color: lightgrey;
 }
 .section-header h2{
 	
@@ -637,10 +651,13 @@ color: #fff;
 	/* margin-bottom: 110px; */
 	background: transparent;
 	color: #767676;
+	overflow: hidden;
 } 
 #services{
 	position: relative;
 	background: #1e1e1e;
+	overflow: hidden;
+	margin-left: -5px;
 }
 #services:before{
 	content:'';
@@ -1031,6 +1048,9 @@ ul.list-default li {
 	padding: 4px 10px;
 	border-radius: 4px;
 }
+row{
+	overflow: hidden;
+}
 
 /* ------------------------------------------------------------------------------
 	Contact form
@@ -1281,10 +1301,6 @@ min-width: initial !important;
 }
 .container-map{
 	margin-left: -14px;
-	
-}
-.Acontainer{
-	background-color:black;
 	
 }
 

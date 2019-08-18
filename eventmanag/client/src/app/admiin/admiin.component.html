@@ -1,3 +1,5 @@
+<section >
+    <div style="height: 600px;width:auto;" >
 <div class="col-lg-4 offset-lg-3">
   <form action="abcd.html">
       <div class="form-group">
@@ -7,29 +9,31 @@
       <div class="form-row">
           <div class="form-group col-md-6">
               <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="email" placeholder="Email" name="email">
+              <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="email"  name="email">
           </div>
           <div class="form-group col-md-6">
               <label for="inputPassword4">Event Category</label>
-              <input type="password" class="form-control" id="inputPassword4" [(ngModel)]="password" placeholder="Password" name="password">
+              <input type="password" class="form-control" id="inputPassword4" [(ngModel)]="password"  name="password">
           </div>
       </div>
-      <div class="form-group">
+      <div class="form-group col-md-6">
           <label for="inputAddress">Event Details</label>
           <input type="text" class="form-control" id="inputAddress" [(ngModel)]="address" name="address">
       </div>
-      <div class="form-row" style="float: left">
+      <div class="form-row col-md-6" style="float: left">
           <div class="form-group col-md-6">
-              <label for="inputCity">Venu Address></label>
+              <label for="inputCity">Venu Address</label>
               <input type="text" class="form-control" id="inputCity" name="city" [(ngModel)]="city">
           </div>
       </div >
-      <div class="form-row" style="float: left">
+      <div class="form-row col-md-6" style="float: left">
         <div class="form-group col-md-6">
-            <label for="inputCity">Image</label>
+            <label for="inputCity">Image Link</label>
             <input type="text" class="form-control" id="inputCity" name="image" [(ngModel)]="image">
         </div>
     </div >
       <button type="submit" class="btn btn-primary" (click)="addData()">Submit</button>
   </form>
 </div>
+</div>
+</section>
